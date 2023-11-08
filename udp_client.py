@@ -1,14 +1,20 @@
 import socket
 from datetime import datetime
 import time
+from json import load
 
-passcode = 'OdiJ4Hpa5c'
+# load passcode from config json in the same directory
+passcode = '*********'
+with open('drone_config.json') as f:
+    data = load(f)
+    passcode = str(data['PASSCODE'])
 
 bytes_to_send = str.encode(passcode)
 server_address_port = ("10.0.0.44", 5030)
 buffer_size = 1436
 fd = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 fd.settimeout(2)
+
 
 def get_pic():
   fd.sendto(bytes_to_send, server_address_port)
