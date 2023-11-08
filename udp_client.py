@@ -9,10 +9,9 @@ with open('config.json') as f:
     data = load(f)
     passcode = str(data['PASSCODE'])
 
-print(passcode)
-
 bytes_to_send = str.encode(passcode)
 server_address_port = ("10.0.0.44", 5030)
+# 1436 is a number acquired from experimenting with the packet size sent by the esp32-cam module that is sending the images
 buffer_size = 1436
 fd = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 fd.settimeout(2)
