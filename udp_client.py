@@ -5,9 +5,11 @@ from json import load
 
 # load passcode from config json in the same directory
 passcode = '*********'
-with open('drone_config.json') as f:
+with open('config.json') as f:
     data = load(f)
     passcode = str(data['PASSCODE'])
+
+print(passcode)
 
 bytes_to_send = str.encode(passcode)
 server_address_port = ("10.0.0.44", 5030)
