@@ -1,2 +1,5 @@
 *.jpg
+
 config.json
+
+.DS_Store
