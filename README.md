@@ -15,4 +15,4 @@ Create a copy of the `config_example.json` file and rename it to `config.json`. 
 
 That being said, you must use the ESP32-CAM on a secured network as it is not hard to use a simple brute force attack to find the correct if one already has access to the same network the ESP32-CAM is running on.
 
-The link to the code for the ESP32-CAM is here: TODO
+The link to the code for the ESP32-CAM is here: https://github.com/Ali-Sab/esp32-cam-udp-server
