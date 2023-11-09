@@ -44,11 +44,25 @@ def get_pic():
   if len(image) < 100:
     print(image)
 
+  # Run YoloV7 on the image here
+
+  # Check result
+
+  # Flag image (or don't)
+
+  # If not flagged, compress image with command `jpegoptim --size=1k  image_name.jpg`
+
+  # How do I delete it automatically in 1 day?
+  #  Add a delete command in the main loop that does datetime.now() - 1 day, and checks filename at the current second and second-1
+  #  If it finds a picture that is not marked, delete it
+  # OR... add a crontab that runs every hour that runs a script that finds all files that are 
+  #  images and older than a day and don't have a flag in their name and deletes them
+
 
 while True:
   try:
     get_pic()
   except socket.timeout:
     print("TIME OUT at {}".format(datetime.now().strftime('%Y.%m.%d_%H.%M.%S')))
-  time.sleep(2)
+  time.sleep(3)
    
