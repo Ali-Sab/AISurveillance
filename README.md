@@ -9,8 +9,12 @@ The images with humans are flagged and kept forever. The images without humans a
 
 These images are available to see on the web application powered by React. The link to that repo is here: TODO
 
+# Note
+There are no security meaures. Please secure your WiFi network instead.
 
-# Note:
+# Below is old stuff
+
+### Note:
 Create a copy of the `config_example.json` file and rename it to `config.json`. Change the passcode in the new config file to whatever you wish. The code from the ESP32-CAM's side should check that passcode as a basic precaution to make sure no one else on your network is seeing the images.
 
 That being said, you must use the ESP32-CAM on a secured network as it is not hard to use a simple brute force attack to find the correct if one already has access to the same network the ESP32-CAM is running on.
