@@ -1,12 +1,14 @@
 # Surveillance Project with AI Integration
 
 This Python backend will run 24/7 on a server and request images from a ESP32-CAM module plugged into a wall or battery. 
-The ESP32-CAM sends 320x240 resolution images back.
+The ESP32-CAM sends 800x600 resolution images back.
+
+YoloV7 is used to run the images and check for humans.
+An SQLite database is used to track the images that have people in them and those that do not.
+The images that don't have people in them are compressed to reduce space consumption.
 
 ### TODO
-YoloV7 is used to run the images and check for humans.
-The images with humans are flagged and kept forever. The images without humans are deleted in 7 days.
-
+The images with humans are flagged and kept forever. The images without humans are deleted in 30 days.
 These images are available to see on the web application powered by React. The link to that repo is here: TODO
 
 # Note
