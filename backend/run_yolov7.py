@@ -61,11 +61,11 @@ for filename in onlyfiles:
 			filename_new = filename_raw + '_person.jpg'
 			logging.debug("Moving image with person to {}".format(OUTPUT_IMAGE_PATH + 'flagged/' + filename_new))
 			subprocess.run(['mv', expPath + "/" + filename, OUTPUT_IMAGE_PATH + 'flagged/' + filename_new])
-			cur.execute("INSERT INTO image VALUES(?, ?, ?)", (OUTPUT_IMAGE_PATH + 'flagged/' + filename_new, datetime.now(), True))
+			cur.execute("INSERT INTO image VALUES(?, ?, ?)", (OUTPUT_IMAGE_PATH + 'flagged/' + filename_new, dt, True))
 	else:
 			logging.debug("Moving image to {}".format(OUTPUT_IMAGE_PATH + 'unflagged/' + filename))
 			subprocess.run(['mv', expPath + "/" + filename, OUTPUT_IMAGE_PATH + 'unflagged/' + filename])
-			cur.execute("INSERT INTO image VALUES(?, ?, ?)", (OUTPUT_IMAGE_PATH + 'unflagged/' + filename, datetime.now(), False))
+			cur.execute("INSERT INTO image VALUES(?, ?, ?)", (OUTPUT_IMAGE_PATH + 'unflagged/' + filename, dt, False))
 			logging.debug("Compressing image")
 			subprocess.run(['jpegoptim', '--size=6k',  OUTPUT_IMAGE_PATH + 'unflagged/' + filename])
 
