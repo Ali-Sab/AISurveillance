@@ -15,9 +15,9 @@ logging.debug("DELETION EVENT: Time is now {}".format(datetime.now()))
 dt = datetime.now() - timedelta(days=30)
 logging.debug("Deleting all images before time = {}".format(dt))
 
-cur.execute("SELECT filename FROM image WHERE is_person=0 AND datetime < ?", [dt])
+cur.execute("SELECT filename FROM image WHERE is_person=0 AND dt < ?", [dt])
 results = cur.fetchall()
-cur.execute("DELETE FROM image WHERE is_person=0 AND datetime < ?", [dt])
+cur.execute("DELETE FROM image WHERE is_person=0 AND dt < ?", [dt])
 con.commit()
 
 for result in results:

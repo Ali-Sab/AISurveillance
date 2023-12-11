@@ -6,4 +6,7 @@ cur = con.cursor()
 cur.execute('DELETE FROM image')
 con.commit()
 
+cur.execute("DROP TABLE image")
+con.commit()
+
 # note that the images are not deleted, only the db entries

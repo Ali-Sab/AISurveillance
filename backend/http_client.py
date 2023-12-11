@@ -38,13 +38,6 @@ def get_pic():
   global count
   count += 1
 
-  # How do I delete it automatically in 30 days?
-  #  Add a delete command in the main loop that does datetime.now() - 30 days, and checks filename at the current second and second-1
-  #  If it finds a picture that is not marked, delete it
-  # OR... add a crontab that runs every hour that runs a script that finds all files that are 
-  #  images and older than a day and don't have a flag in their name and deletes them
-
-
 while True:  
   get_pic()
   time.sleep(3)
