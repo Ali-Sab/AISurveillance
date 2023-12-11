@@ -16,7 +16,6 @@ cur = con.cursor()
 
 
 def get_pic():
-
   try:
     response = requests.get(server_address, timeout=3)
   except (requests.exceptions.Timeout, requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError) as e:
@@ -41,41 +40,50 @@ def get_pic():
   print("Wrote image of size {} B".format(len(image)))
 
   # Run YoloV7 on the image here
-  subprocess.run(["python3", "yolov7/detect.py", "--weights", "yolov7/yolov7-tiny.pt", "--conf", "0.25", "--source", 'images/' + filename, "--save-txt", "--name", filename_raw]) 
+  subprocess.run(["python3", "yolov7/detect.py", "--weights", "yolov7/yolov7-tiny.pt", "--conf", "0.25", "--source", 'images/' + filename, "--save-txt", "--name", filename_raw, "--no-trace"]) 
   subprocess.run(['rm', 'images/' + filename])
 
   # text file path
-  print(RESULT_PATH + filename_raw + '/labels/' + filename_raw + '.txt')
+  # print(RESULT_PATH + filename_raw + '/labels/' + filename_raw + '.txt')
   # image path (after yolov7)
-  print(RESULT_PATH + filename)
+  # print(RESULT_PATH + filename)
+
   # Check result
   if os.path.exists(RESULT_PATH + filename_raw + '/labels/' + filename_raw + '.txt'):
-
-    file = open(RESULT_PATH + filename_raw + '/labels/' + filename_raw + '.txt', 'r')
-    while True:
-      line = file.readline()
-      if not line:
-        break
-      values = line.split(' ')
-      if values[0] == '0':
+    print("Opening txt at path={}".format(RESULT_PATH + filename_raw + '/labels/' + filename_raw + '.txt'))
+    with open(RESULT_PATH + filename_raw + '/labels/' + filename_raw + '.txt', 'r') as file:
+      personFound = False
+      while True:
+        line = file.readline()
+        if not line:
+          break
+        values = line.split(' ')
+        if values[0] == '0':
+          personFound = True
+          break
+          
+      if personFound:
         filename_new = filename[:-4] + '_person.jpg'
+        print("Moving image with person to {}".format(OUTPUT_IMAGE_PATH + 'flagged/' + filename_new))
         subprocess.run(['mv', RESULT_PATH + filename_raw + '/' + filename, OUTPUT_IMAGE_PATH + 'flagged/' + filename_new])
         cur.execute("INSERT INTO image VALUES(?, ?, ?)", (OUTPUT_IMAGE_PATH + 'flagged/' + filename_new, datetime.now(), True))
       else:
+        print("Moving image to {}".format(OUTPUT_IMAGE_PATH + 'unflagged/' + filename))
         subprocess.run(['mv', RESULT_PATH + filename_raw + '/' + filename, OUTPUT_IMAGE_PATH + 'unflagged/' + filename])
         cur.execute("INSERT INTO image VALUES(?, ?, ?)", (OUTPUT_IMAGE_PATH + 'unflagged/' + filename, datetime.now(), False))
+        print("Compressing image")
         subprocess.run(['jpegoptim', '--size=6k',  OUTPUT_IMAGE_PATH + 'unflagged/' + filename])
-      # if no human, run compress command on the output (which may have marked another animal) and write it out somewhere
-      # in either case, delete the old copy
   else:
     # No txt file found -> nothing was found in the picture
+    print("Moving image to {}".format(OUTPUT_IMAGE_PATH + 'unflagged/' + filename))
     subprocess.run(['mv', RESULT_PATH + filename_raw + '/' + filename, OUTPUT_IMAGE_PATH + 'unflagged/' + filename])
     cur.execute("INSERT INTO image VALUES(?, ?, ?)", (OUTPUT_IMAGE_PATH + 'unflagged/' + filename, datetime.now(), False))
+    print("Compressing image")
     subprocess.run(['jpegoptim', '--size=6k',  OUTPUT_IMAGE_PATH + 'unflagged/' + filename])
   con.commit()
 
-  # How do I delete it automatically in 1 day?
-  #  Add a delete command in the main loop that does datetime.now() - 1 day, and checks filename at the current second and second-1
+  # How do I delete it automatically in 30 days?
+  #  Add a delete command in the main loop that does datetime.now() - 30 days, and checks filename at the current second and second-1
   #  If it finds a picture that is not marked, delete it
   # OR... add a crontab that runs every hour that runs a script that finds all files that are 
   #  images and older than a day and don't have a flag in their name and deletes them
