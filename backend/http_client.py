@@ -50,4 +50,5 @@ while True:
   time.sleep(3)
   if count >= 20:
     subprocess.Popen(['python3', 'run_yolov7.py'])
+    subprocess.Popen(['python3', 'deleteOldImages.py'])
     count = 0
