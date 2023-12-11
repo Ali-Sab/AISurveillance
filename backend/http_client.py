@@ -25,6 +25,8 @@ def get_pic():
   
   if response.status_code != 200:
     print("ERROR at {}".format(datetime.now().strftime('%Y.%m.%d_%H.%M.%S')))
+    print("ERROR CODE: ", response.status_code)
+    print(response.content())
     return
     
   image = response.content
