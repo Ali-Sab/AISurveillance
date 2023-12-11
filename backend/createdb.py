@@ -18,6 +18,6 @@ cur.execute("CREATE TABLE image(filename TEXT, dt datetime, is_person boolean)")
 con.commit()
 
 cur.execute("PRAGMA table_info('image')")
-cur.fetchall()
+print(cur.fetchall())
 
 print("Done")
