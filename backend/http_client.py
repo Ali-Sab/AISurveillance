@@ -7,8 +7,8 @@ import logging
 server_address = 'http://10.0.0.44/cam-hi.jpg'
 
 OUTPUT_IMAGE_PATH = "images/"
-
-logging.basicConfig(filename="logs/http_client.log", filemode='a', encoding='utf-8', level=logging.DEBUG)
+formattedTime = datetime.now().strftime('%Y.%m.%d')
+logging.basicConfig(filename="logs/http_client_" + formattedTime + ".log", filemode='a', encoding='utf-8', level=logging.DEBUG)
 
 count = 0
 def get_pic():
