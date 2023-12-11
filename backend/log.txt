@@ -1,0 +1,310 @@
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.35.19.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.35.19', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (248.7ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.35.19/recv_img_2023.12.11_14.35.19.jpg
+Done. (0.267s)
+res/unflagged/recv_img_2023.12.11_14.35.19.jpg 800x600 24bit N JFIF  [OK] 26485 --> 6696 bytes (74.72%), optimized.
+res/unflagged/recv_img_2023.12.11_14.35.19.jpg 800x600 24bit N JFIF  [OK] 6696 --> 6683 bytes (0.19%), optimized.
+res/unflagged/recv_img_2023.12.11_14.35.19.jpg 800x600 24bit N JFIF  [OK] 6683 --> 6683 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.35.34.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.35.34', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, Done. (246.1ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.35.34/recv_img_2023.12.11_14.35.34.jpg
+Done. (0.264s)
+res/unflagged/recv_img_2023.12.11_14.35.34.jpg 800x600 24bit N JFIF  [OK] 22106 --> 6676 bytes (69.80%), optimized.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.35.48.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.35.48', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (246.7ms) Inference, (1.4ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.35.48/recv_img_2023.12.11_14.35.48.jpg
+Done. (0.265s)
+res/unflagged/recv_img_2023.12.11_14.35.48.jpg 800x600 24bit N JFIF  [OK] 27752 --> 6804 bytes (75.48%), optimized.
+res/unflagged/recv_img_2023.12.11_14.35.48.jpg 800x600 24bit N JFIF  [OK] 6804 --> 6790 bytes (0.21%), optimized.
+res/unflagged/recv_img_2023.12.11_14.35.48.jpg 800x600 24bit N JFIF  [OK] 6790 --> 6790 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.36.03.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.36.03', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (248.2ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.36.03/recv_img_2023.12.11_14.36.03.jpg
+Done. (0.267s)
+res/unflagged/recv_img_2023.12.11_14.36.03.jpg 800x600 24bit N JFIF  [OK] 26512 --> 6262 bytes (76.38%), optimized.
+res/unflagged/recv_img_2023.12.11_14.36.03.jpg 800x600 24bit N JFIF  [OK] 6262 --> 6262 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.36.17.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.36.17', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (247.8ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.36.17/recv_img_2023.12.11_14.36.17.jpg
+Done. (0.267s)
+res/unflagged/recv_img_2023.12.11_14.36.17.jpg 800x600 24bit N JFIF  [OK] 27501 --> 6615 bytes (75.95%), optimized.
+res/unflagged/recv_img_2023.12.11_14.36.17.jpg 800x600 24bit N JFIF  [OK] 6615 --> 6615 bytes (0.00%), skipped.
+res/unflagged/recv_img_2023.12.11_14.36.17.jpg 800x600 24bit N JFIF  [OK] 6615 --> 6615 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.36.31.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.36.31', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (245.3ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.36.31/recv_img_2023.12.11_14.36.31.jpg
+Done. (0.264s)
+res/unflagged/recv_img_2023.12.11_14.36.31.jpg 800x600 24bit N JFIF  [OK] 27435 --> 6566 bytes (76.07%), optimized.
+res/unflagged/recv_img_2023.12.11_14.36.31.jpg 800x600 24bit N JFIF  [OK] 6566 --> 6556 bytes (0.15%), optimized.
+res/unflagged/recv_img_2023.12.11_14.36.31.jpg 800x600 24bit N JFIF  [OK] 6556 --> 6556 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.36.46.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.36.46', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (243.0ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.36.46/recv_img_2023.12.11_14.36.46.jpg
+Done. (0.262s)
+res/unflagged/recv_img_2023.12.11_14.36.46.jpg 800x600 24bit N JFIF  [OK] 26957 --> 6400 bytes (76.26%), optimized.
+res/unflagged/recv_img_2023.12.11_14.36.46.jpg 800x600 24bit N JFIF  [OK] 6400 --> 6400 bytes (0.00%), skipped.
+res/unflagged/recv_img_2023.12.11_14.36.46.jpg 800x600 24bit N JFIF  [OK] 6400 --> 6400 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.37.00.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.37.00', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (245.3ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.37.00/recv_img_2023.12.11_14.37.00.jpg
+Done. (0.263s)
+res/unflagged/recv_img_2023.12.11_14.37.00.jpg 800x600 24bit N JFIF  [OK] 26060 --> 6204 bytes (76.19%), optimized.
+res/unflagged/recv_img_2023.12.11_14.37.00.jpg 800x600 24bit N JFIF  [OK] 6204 --> 6204 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.37.14.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.37.14', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (244.7ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.37.14/recv_img_2023.12.11_14.37.14.jpg
+Done. (0.263s)
+res/unflagged/recv_img_2023.12.11_14.37.14.jpg 800x600 24bit N JFIF  [OK] 26350 --> 6587 bytes (75.00%), optimized.
+res/unflagged/recv_img_2023.12.11_14.37.14.jpg 800x600 24bit N JFIF  [OK] 6587 --> 6505 bytes (1.24%), optimized.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.37.28.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.37.28', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (245.2ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.37.28/recv_img_2023.12.11_14.37.28.jpg
+Done. (0.263s)
+res/unflagged/recv_img_2023.12.11_14.37.28.jpg 800x600 24bit N JFIF  [OK] 26012 --> 6249 bytes (75.98%), optimized.
+res/unflagged/recv_img_2023.12.11_14.37.28.jpg 800x600 24bit N JFIF  [OK] 6249 --> 6249 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.37.43.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.37.43', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (246.8ms) Inference, (1.8ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.37.43/recv_img_2023.12.11_14.37.43.jpg
+Done. (0.266s)
+res/unflagged/recv_img_2023.12.11_14.37.43.jpg 800x600 24bit N JFIF  [OK] 26673 --> 6667 bytes (75.00%), optimized.
+res/unflagged/recv_img_2023.12.11_14.37.43.jpg 800x600 24bit N JFIF  [OK] 6667 --> 6666 bytes (0.01%), optimized.
+res/unflagged/recv_img_2023.12.11_14.37.43.jpg 800x600 24bit N JFIF  [OK] 6666 --> 6666 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.37.57.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.37.57', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, Done. (249.3ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.37.57/recv_img_2023.12.11_14.37.57.jpg
+Done. (0.268s)
+res/unflagged/recv_img_2023.12.11_14.37.57.jpg 800x600 24bit N JFIF  [OK] 25701 --> 7024 bytes (72.67%), optimized.
+res/unflagged/recv_img_2023.12.11_14.37.57.jpg 800x600 24bit N JFIF  [OK] 7024 --> 6802 bytes (3.16%), optimized.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.38.11.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.38.11', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (247.1ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.38.11/recv_img_2023.12.11_14.38.11.jpg
+Done. (0.265s)
+res/unflagged/recv_img_2023.12.11_14.38.11.jpg 800x600 24bit N JFIF  [OK] 25271 --> 6952 bytes (72.49%), optimized.
+res/unflagged/recv_img_2023.12.11_14.38.11.jpg 800x600 24bit N JFIF  [OK] 6952 --> 6724 bytes (3.28%), optimized.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.38.26.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.38.26', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (250.3ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.38.26/recv_img_2023.12.11_14.38.26.jpg
+Done. (0.269s)
+res/unflagged/recv_img_2023.12.11_14.38.26.jpg 800x600 24bit N JFIF  [OK] 26960 --> 6412 bytes (76.22%), optimized.
+res/unflagged/recv_img_2023.12.11_14.38.26.jpg 800x600 24bit N JFIF  [OK] 6412 --> 6412 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.38.41.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.38.41', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (245.5ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.38.41/recv_img_2023.12.11_14.38.41.jpg
+Done. (0.264s)
+res/unflagged/recv_img_2023.12.11_14.38.41.jpg 800x600 24bit N JFIF  [OK] 26415 --> 6194 bytes (76.55%), optimized.
+res/unflagged/recv_img_2023.12.11_14.38.41.jpg 800x600 24bit N JFIF  [OK] 6194 --> 6194 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.38.56.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.38.56', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (242.9ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.38.56/recv_img_2023.12.11_14.38.56.jpg
+Done. (0.261s)
+res/unflagged/recv_img_2023.12.11_14.38.56.jpg 800x600 24bit N JFIF  [OK] 26026 --> 6281 bytes (75.87%), optimized.
+res/unflagged/recv_img_2023.12.11_14.38.56.jpg 800x600 24bit N JFIF  [OK] 6281 --> 6281 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.39.10.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.39.10', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (244.3ms) Inference, (1.5ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.39.10/recv_img_2023.12.11_14.39.10.jpg
+Done. (0.263s)
+res/unflagged/recv_img_2023.12.11_14.39.10.jpg 800x600 24bit N JFIF  [OK] 26143 --> 6340 bytes (75.75%), optimized.
+res/unflagged/recv_img_2023.12.11_14.39.10.jpg 800x600 24bit N JFIF  [OK] 6340 --> 6340 bytes (0.00%), skipped.
+res/unflagged/recv_img_2023.12.11_14.39.10.jpg 800x600 24bit N JFIF  [OK] 6340 --> 6340 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.39.24.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.39.24', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+2 chairs, 1 couch, Done. (247.1ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.39.24/recv_img_2023.12.11_14.39.24.jpg
+Done. (0.266s)
+res/unflagged/recv_img_2023.12.11_14.39.24.jpg 800x600 24bit N JFIF  [OK] 27502 --> 6842 bytes (75.12%), optimized.
+res/unflagged/recv_img_2023.12.11_14.39.24.jpg 800x600 24bit N JFIF  [OK] 6842 --> 6823 bytes (0.28%), optimized.
+res/unflagged/recv_img_2023.12.11_14.39.24.jpg 800x600 24bit N JFIF  [OK] 6823 --> 6820 bytes (0.04%), optimized.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.39.39.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.39.39', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, 1 couch, Done. (247.3ms) Inference, (1.6ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.39.39/recv_img_2023.12.11_14.39.39.jpg
+Done. (0.266s)
+res/unflagged/recv_img_2023.12.11_14.39.39.jpg 800x600 24bit N JFIF  [OK] 26247 --> 6258 bytes (76.16%), optimized.
+res/unflagged/recv_img_2023.12.11_14.39.39.jpg 800x600 24bit N JFIF  [OK] 6258 --> 6258 bytes (0.00%), skipped.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.39.53.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.39.53', exist_ok=False, no_trace=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+1 chair, Done. (241.6ms) Inference, (1.4ms) NMS
+ The image with the result is saved in: runs/detect/recv_img_2023.12.11_14.39.53/recv_img_2023.12.11_14.39.53.jpg
+Done. (0.259s)
+res/unflagged/recv_img_2023.12.11_14.39.53.jpg 800x600 24bit N JFIF  [OK] 23201 --> 6766 bytes (70.84%), optimized.
+Namespace(weights=['yolov7/yolov7-tiny.pt'], source='images/recv_img_2023.12.11_14.40.07.jpg', img_size=640, conf_thres=0.25, iou_thres=0.45, device='', view_img=False, save_txt=True, save_conf=False, nosave=False, classes=None, agnostic_nms=False, augment=False, update=False, project='runs/detect', name='recv_img_2023.12.11_14.40.07', exist_ok=False, no_trace=False)
+Fusing layers... 
+Received 13298 bytes
+Wrote image of size 13298 B
+runs/detect/recv_img_2023.12.11_14.35.19/labels/recv_img_2023.12.11_14.35.19.txt
+runs/detect/recv_img_2023.12.11_14.35.19.jpg
+Received 13363 bytes
+Wrote image of size 13363 B
+runs/detect/recv_img_2023.12.11_14.35.34/labels/recv_img_2023.12.11_14.35.34.txt
+runs/detect/recv_img_2023.12.11_14.35.34.jpg
+Received 13317 bytes
+Wrote image of size 13317 B
+runs/detect/recv_img_2023.12.11_14.35.48/labels/recv_img_2023.12.11_14.35.48.txt
+runs/detect/recv_img_2023.12.11_14.35.48.jpg
+Received 13348 bytes
+Wrote image of size 13348 B
+runs/detect/recv_img_2023.12.11_14.36.03/labels/recv_img_2023.12.11_14.36.03.txt
+runs/detect/recv_img_2023.12.11_14.36.03.jpg
+Received 13347 bytes
+Wrote image of size 13347 B
+runs/detect/recv_img_2023.12.11_14.36.17/labels/recv_img_2023.12.11_14.36.17.txt
+runs/detect/recv_img_2023.12.11_14.36.17.jpg
+Received 13330 bytes
+Wrote image of size 13330 B
+runs/detect/recv_img_2023.12.11_14.36.31/labels/recv_img_2023.12.11_14.36.31.txt
+runs/detect/recv_img_2023.12.11_14.36.31.jpg
+Received 13337 bytes
+Wrote image of size 13337 B
+runs/detect/recv_img_2023.12.11_14.36.46/labels/recv_img_2023.12.11_14.36.46.txt
+runs/detect/recv_img_2023.12.11_14.36.46.jpg
+Received 13397 bytes
+Wrote image of size 13397 B
+runs/detect/recv_img_2023.12.11_14.37.00/labels/recv_img_2023.12.11_14.37.00.txt
+runs/detect/recv_img_2023.12.11_14.37.00.jpg
+Received 13312 bytes
+Wrote image of size 13312 B
+runs/detect/recv_img_2023.12.11_14.37.14/labels/recv_img_2023.12.11_14.37.14.txt
+runs/detect/recv_img_2023.12.11_14.37.14.jpg
+Received 13386 bytes
+Wrote image of size 13386 B
+runs/detect/recv_img_2023.12.11_14.37.28/labels/recv_img_2023.12.11_14.37.28.txt
+runs/detect/recv_img_2023.12.11_14.37.28.jpg
+Received 13376 bytes
+Wrote image of size 13376 B
+runs/detect/recv_img_2023.12.11_14.37.43/labels/recv_img_2023.12.11_14.37.43.txt
+runs/detect/recv_img_2023.12.11_14.37.43.jpg
+Received 13333 bytes
+Wrote image of size 13333 B
+runs/detect/recv_img_2023.12.11_14.37.57/labels/recv_img_2023.12.11_14.37.57.txt
+runs/detect/recv_img_2023.12.11_14.37.57.jpg
+Received 13378 bytes
+Wrote image of size 13378 B
+runs/detect/recv_img_2023.12.11_14.38.11/labels/recv_img_2023.12.11_14.38.11.txt
+runs/detect/recv_img_2023.12.11_14.38.11.jpg
+Received 13311 bytes
+Wrote image of size 13311 B
+runs/detect/recv_img_2023.12.11_14.38.26/labels/recv_img_2023.12.11_14.38.26.txt
+runs/detect/recv_img_2023.12.11_14.38.26.jpg
+Received 13294 bytes
+Wrote image of size 13294 B
+runs/detect/recv_img_2023.12.11_14.38.41/labels/recv_img_2023.12.11_14.38.41.txt
+runs/detect/recv_img_2023.12.11_14.38.41.jpg
+Received 13354 bytes
+Wrote image of size 13354 B
+runs/detect/recv_img_2023.12.11_14.38.56/labels/recv_img_2023.12.11_14.38.56.txt
+runs/detect/recv_img_2023.12.11_14.38.56.jpg
+Received 13333 bytes
+Wrote image of size 13333 B
+runs/detect/recv_img_2023.12.11_14.39.10/labels/recv_img_2023.12.11_14.39.10.txt
+runs/detect/recv_img_2023.12.11_14.39.10.jpg
+Received 13337 bytes
+Wrote image of size 13337 B
+runs/detect/recv_img_2023.12.11_14.39.24/labels/recv_img_2023.12.11_14.39.24.txt
+runs/detect/recv_img_2023.12.11_14.39.24.jpg
+Received 13295 bytes
+Wrote image of size 13295 B
+runs/detect/recv_img_2023.12.11_14.39.39/labels/recv_img_2023.12.11_14.39.39.txt
+runs/detect/recv_img_2023.12.11_14.39.39.jpg
+Received 13333 bytes
+Wrote image of size 13333 B
+runs/detect/recv_img_2023.12.11_14.39.53/labels/recv_img_2023.12.11_14.39.53.txt
+runs/detect/recv_img_2023.12.11_14.39.53.jpg
+Received 13331 bytes
+Wrote image of size 13331 B
