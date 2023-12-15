@@ -3,3 +3,4 @@ runs
 config.json
 image.db
 .DS_Store
+logs_aliserver

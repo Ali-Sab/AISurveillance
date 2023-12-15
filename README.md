@@ -8,7 +8,7 @@ An SQLite database is used to track the images that have people in them and thos
 The images that don't have people in them are compressed to reduce space consumption.
 
 ### TODO
-The images with humans are flagged and kept forever. The images without humans are deleted in 30 days.
+The images with humans are flagged and kept forever. The images without humans are deleted in 28 days.
 These images are available to see on the web application powered by React. The link to that repo is here: TODO
 
 # Note
