@@ -1,11 +1,13 @@
 from flask import Flask, request, send_from_directory
 from flask_cors import CORS
+from flask_socketio import SocketIO
 import sqlite3
 from datetime import datetime, timedelta
 import os
 
 app = Flask(__name__)
 CORS(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 server_path = 'http://localhost:5000/images/'
 
 @app.route('/images/<path:path>')
@@ -16,11 +18,31 @@ def send_image(path):
 def live():
     entries = os.listdir('../camera_client/images/')
     entries = sorted(entries)
-
     datetime_format = "recv_img_%Y.%m.%d_%H.%M.%S.jpg"
     for i, entry in enumerate(entries):
         entries[i] = {'filepath':server_path + entry, 'datetime':datetime.strptime(entry, datetime_format).timestamp()}
     return entries
+
+@socketio.on('message')
+def handle_message(data):
+    print("received message: " + data)
+    socketio.emit('message', data='i got your message :D')
+
+@socketio.on('getImage')
+def fetch_image(given_dt):
+    entries = os.listdir('../camera_client/images/')
+    if len(entries) > 0:
+        entries = sorted(entries)
+        datetime_format = "recv_img_%Y.%m.%d_%H.%M.%S.jpg"
+        latest_dt = datetime.strptime(entries[-1], datetime_format).timestamp()
+        if given_dt < latest_dt:
+            result = {'filepath':server_path + entries[-1], 'datetime':latest_dt}
+            socketio.emit('filepath', data=result)
+    
+    
+@socketio.on("connection_closed")
+def handle_close():
+    print("connection closed with socket!!!")
 
 @app.route("/weekly-sightings")
 def weekly_sightings():
@@ -74,6 +96,10 @@ def day_images():
     sightings = []
 
     return sightings
+
+if __name__ == 'server':
+    print("SocketIO server starting")
+    socketio.run(app, debug=True, port=5000)
 
 
 # for i, result in enumerate(results):
