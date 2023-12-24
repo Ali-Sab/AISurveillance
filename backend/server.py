@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 import os
 
 app = Flask(__name__)
-CORS(app)
-socketio = SocketIO(app, cors_allowed_origins="*")
+CORS(app, resources={r"/*": {"origins":"https://localhost:3000"} })
+socketio = SocketIO(app, cors_allowed_origins="https://localhost:3000")
 server_path = 'http://localhost:5000/images/'
 
 @app.route('/images/<path:path>')
@@ -22,11 +22,6 @@ def live():
     for i, entry in enumerate(entries):
         entries[i] = {'filepath':server_path + entry, 'datetime':datetime.strptime(entry, datetime_format).timestamp()}
     return entries
-
-@socketio.on('message')
-def handle_message(data):
-    print("received message: " + data)
-    socketio.emit('message', data='i got your message :D')
 
 @socketio.on('getImage')
 def fetch_image(given_dt):
