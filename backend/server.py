@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins":"https://localhost:3000"} })
-socketio = SocketIO(app, cors_allowed_origins="https://localhost:3000")
+CORS(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 server_path = 'http://localhost:5000/images/'
 
 @app.route('/images/<path:path>')
