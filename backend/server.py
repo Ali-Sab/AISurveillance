@@ -92,7 +92,7 @@ def day_images():
 
     return sightings
 
-if __name__ == 'server':
+if __name__ == '__main__':
     print("SocketIO server starting")
     socketio.run(app, debug=True, port=5000)
 
