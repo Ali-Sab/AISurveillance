@@ -1,14 +1,19 @@
 import Card from "./Card.jsx";
 import { useState, useEffect } from 'react';
 import axios from 'axios'; //js lib api that helps w asynch HTTPS requests
+import './Modal.css';
 
 function Recordings() {
-const [currentPage, setCurrentPage] = useState([1]);
 const [images, setImages] = useState([]);
+const [view, setView] = useState(false);
+const [selectedImage, setSelectedImage] = useState(null); // State to store selected image
 
-const Forward=()=>{
-  setCurrentPage(); //trying to implement page function
-};
+
+const toggleView = () => {
+  setView(!view);
+  console.log("toggled!");
+}
+
 
 // Fetch images from Flask server and set images
 useEffect(() => {
@@ -28,15 +33,30 @@ useEffect(() => {
     </div>
       <ul className="grid gap-4 grid-cols-3">     
         {images.map((image, index) => (
-          <Card key={index} img={image.filepath} />
+          <Card key={index} img={image.filepath} date={new Date(selectedImage.datetime * 1000).toLocaleString()} toggleView={ () => {
+            setSelectedImage(image);
+            toggleView();
+          }} />
         ))}
       
       </ul>
-      <div className="join">
-        <button className="join-item btn" onClick="Back">«</button>
-        <button className="join-item btn">Page 22</button>
-        <button className="join-item btn" onClick="Forward">»</button>
-      </div>
+      <div>
+          {view && selectedImage &&
+            (<div className="view">
+            <div className="overlay" onClick={toggleView}></div>
+                <div className="modal-box">
+                  <figure><img src={selectedImage.filepath} alt="img" /></figure>
+                  <h3 className="font-bold text-lg">Date: {new Date(selectedImage.datetime * 1000).toLocaleString()}</h3>
+                  <p className="py-4">Path: {selectedImage.filepath}</p>
+                  <div className="modal-action">
+                    <form method="dialog">
+                      <button className="btn" onClick={toggleView}>Close</button>
+                    </form>
+                  </div>
+                </div>
+            </div>) 
+          }
+        </div>
     </>
   );
 }
